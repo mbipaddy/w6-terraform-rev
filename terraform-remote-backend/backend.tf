@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "week6-mpek.bucket"
+    bucket         = "bucket-name"
     key            = "dev/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-lock"
+    dynamodb_table = "table-name"
     encrypt        = true
   }
 }
